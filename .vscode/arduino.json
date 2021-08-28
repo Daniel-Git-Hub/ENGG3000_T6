@@ -1,0 +1,4 @@
+{
+    "sketch": "USTestCode.cpp",
+    "board": "arduino:avr:uno"
+}
