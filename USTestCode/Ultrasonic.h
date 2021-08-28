@@ -22,7 +22,7 @@ char wallForward;
 char wallBehind;
 uint8_t ballDetect;
 
-Ultrasonic(char, char, uint8_t);
+void Ultrasonic(char, char, uint8_t);
 int8_t pollUS();
 int8_t startRead(uint8_t);
 uint8_t getResponse(uint8_t);

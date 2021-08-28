@@ -7,7 +7,7 @@ ISR(PCINT0_vect){
 };
 
 
-Ultrasonic(char f, char b, uint8_t d){
+void Ultrasonic(char f, char b, uint8_t d){
     for(char i = 0; i < 8; i++){
         distance[i] = 0;
     }
