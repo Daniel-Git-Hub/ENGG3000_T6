@@ -30,5 +30,20 @@ void loop() {
         Serial.println(getResponse(2));
         Serial.print("Ball Detect 2: ");
         Serial.println(getResponse(4));
+        Serial.print("Suggestyed rotation");
+        switch(getRotation()){
+            case ROTATION_INVALID:
+                Serial.println("Distance is not valid");
+                break;
+            case ROTATION_CORRECT:
+                Serial.println("No rotation necessary");
+                break;
+            case ROTATION_CLOCKWISE:
+                Serial.println("Should rotated clockwise");
+                break;
+            case ROTATION_ANTICLOCKWISE:
+                Serial.println("Should rotated anti-clockwise");
+                break;
+        }
     }
 }

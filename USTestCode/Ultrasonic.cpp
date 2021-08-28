@@ -69,9 +69,9 @@ uint8_t getResponse(uint8_t pin){
 }
 
 
-int8_t getRotation(uint8_t){
+uint8_t getRotation(){
     if(distance[wallForward] && distance[wallBehind]){
-        int8_t difference = ((int16_t)distance[wallForward]) - distance[wallBehind];
+        int16_t difference = ((int16_t)distance[wallForward]) - distance[wallBehind];
         uint8_t absDif = (difference > 0) ? difference : difference*-1;
         if(absDif < ROTATION_ERROR_MARGIN){
             return ROTATION_CORRECT;
