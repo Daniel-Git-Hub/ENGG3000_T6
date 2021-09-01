@@ -41,7 +41,6 @@ char count = 0;
 int8_t pollUS(){
   if((millis() - prevTime) > MS_TIME_OUT){ //Timeout delay
 
-    char count = 0;
     for(char i = 0; i < 4; i++){
         digitalWrite(pins[i]+TRIGGER_OFFSET, 1);
     }
