@@ -33,7 +33,11 @@ uint8_t calcDistance(char pin){
     digitalWrite(pin+TRIGGER_OFFSET, 1);
     delayMicroseconds(10);
     digitalWrite(pin+TRIGGER_OFFSET, 0);
-    return pulseIn(pin+ECHO_OFFSET, 1)/29/2;
+    unsigned long pIn = pulseIn(pin+ECHO_OFFSET, 1, 1000000UL);
+    if(pIn > 900000UL){
+        return 0;
+    }
+    return pIn/29/2;
 }
 
 int8_t pollUS(){
