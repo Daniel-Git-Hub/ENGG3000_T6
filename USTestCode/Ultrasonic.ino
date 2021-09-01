@@ -55,7 +55,7 @@ int8_t pollUS(){
         dif = micros()-start;
         for(char i = 0; i < 4; i++){
             if(!(count & (1<<i)) && digitalRead(pins[i]+ECHO_OFFSET)){
-                distance[i] = dif/29/2;
+                distance[i] = dif*10/29/2;
                 count |= 1<<i;
             }
         }
