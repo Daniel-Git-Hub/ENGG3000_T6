@@ -14,7 +14,7 @@ inline void setPin(char pin){
 }
 
 void Ultrasonic(char f, char b, char b1, char b2){
-    for(char i = 0; i < 8; i++){
+    for(char i = 0; i < 4; i++){
         distance[i] = 0;
     }
     ballDetect1 = b1;
