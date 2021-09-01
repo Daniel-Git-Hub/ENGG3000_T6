@@ -14,10 +14,10 @@ void Ultrasonic(char f, char b, char b1, char b2){
     for(char i = 0; i < 4; i++){
         distance[i] = 0;
     }
-    pins[0] = b1;
-    pins[1] = b2;
-    pins[2] = f;
-    pins[3] = b;
+    pins[0] = f;
+    pins[1] = b;
+    pins[2] = b1;
+    pins[3] = b2;
 
     setPin(f);
     setPin(b);
