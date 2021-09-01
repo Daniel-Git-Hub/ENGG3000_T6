@@ -3,10 +3,7 @@
 
 unsigned long prevTime = 0;
 uint8_t distance[4];
-char wallForward;
-char wallBehind;
-char ballDetect1;
-char ballDetect2;
+char pins[4];
 
 inline void setPin(char pin){
   pinMode(pin+TRIGGER_OFFSET, OUTPUT);
@@ -17,10 +14,10 @@ void Ultrasonic(char f, char b, char b1, char b2){
     for(char i = 0; i < 4; i++){
         distance[i] = 0;
     }
-    ballDetect1 = b1;
-    ballDetect2 = b2;
-    wallForward = f;
-    wallBehind = b;
+    pins[0] = b1;
+    pins[1] = b2;
+    pins[2] = f;
+    pins[3] = b;
 
     setPin(f);
     setPin(b);
@@ -40,12 +37,43 @@ uint8_t calcDistance(char pin){
     return pIn/29/2;
 }
 
+char count = 0;
 int8_t pollUS(){
   if((millis() - prevTime) > MS_TIME_OUT){ //Timeout delay
-    distance[0] = calcDistance(wallForward);
-    distance[1] = calcDistance(wallBehind);
-    distance[2] = calcDistance(ballDetect1);
-    distance[3] = calcDistance(ballDetect2);
+
+    char count = 0;
+    for(char i = 0; i < 4; i++){
+        digitalWrite(pins[i]+TRIGGER_OFFSET, 1);
+    }
+    delayMicroseconds(10);
+    for(char i = 0; i < 4; i++){
+        digitalWrite(pins[i]+TRIGGER_OFFSET, 0);
+    }
+    unsigned char count = 0;
+    unsigned long start= micros();
+    unsigned long dif = 0;
+    while(count != 0x0f){
+        dif = micros()-start;
+        for(char i = 0; i < 4; i++){
+            if(!(count & (1<<i)) && digitalRead(pins[i]+ECHO_OFFSET)){
+                distance[i] = dif/29/2;
+                count |= 1<<i;
+            }
+        }
+        if(dif > 900000UL){
+            for(char i = 0; i < 4; i++){
+                if(!(count & (1<<i))){
+                    distance[i] = 0;
+                }
+            }
+            break;
+        }
+    }
+
+    // distance[0] = calcDistance(pins[0]);
+    // distance[1] = calcDistance(pins[1]);
+    // distance[2] = calcDistance(pins[2]);
+    // distance[3] = calcDistance(pins[3]);
     prevTime = millis();
   }
 }
@@ -56,8 +84,8 @@ uint8_t getResponse(uint8_t pin){
 
 
 uint8_t getRotation(){
-    if(distance[wallForward] && distance[wallBehind]){
-        int16_t difference = ((int16_t)distance[wallForward]) - distance[wallBehind];
+    if(distance[0] && distance[1]){
+        int16_t difference = ((int16_t)distance[0]) - distance[1];
         uint8_t absDif = (difference > 0) ? difference : difference*-1;
         if(absDif < ROTATION_ERROR_MARGIN){
             return ROTATION_CORRECT;
