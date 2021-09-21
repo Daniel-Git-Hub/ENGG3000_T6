@@ -1,3 +1,6 @@
+#ifndef _DEF_ULTRA_HEADER
+#define _DEF_ULTRA_HEADER
+
 #define STATUS_FLAG 0x01
 
 
@@ -33,3 +36,5 @@ class Ultrasonic {
         uint8_t GetRotation();
         void StartPulse();
 };
+
+#endif

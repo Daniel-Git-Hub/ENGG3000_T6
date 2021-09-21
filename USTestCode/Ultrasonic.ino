@@ -1,10 +1,5 @@
 #include "Ultrasonic.h"
 
-unsigned long prevTime = 0;
-uint8_t distance[4];
-char pins[4];
-
-
 Ultrasonic::Ultrasonic(uint8_t f, uint8_t b, uint8_t b1, uint8_t b2){
     for(uint8_t i = 0; i < 4; i++){
         distance[i] = 0;
@@ -18,7 +13,7 @@ Ultrasonic::Ultrasonic(uint8_t f, uint8_t b, uint8_t b1, uint8_t b2){
     TRIGGER_DDR |= pinMask; //make sure trigger pins are output
     ECHO_DDR &= ~pinMask;   //make sure echo pins are input
 
-    StartPulse()
+    StartPulse();
 }
 
 void Ultrasonic::StartPulse(){
@@ -31,6 +26,12 @@ void Ultrasonic::StartPulse(){
 }
 
 int8_t Ultrasonic::PollUS(){
+    for(uint8_t i = 0; i < 4; i++){
+        if(!((1 << pins[i]) & found) && ((1 << pins[i]) & ECHO_PORT)){
+            found |= 1 << pins[i];
+            distance[i] = (micros() - startTime)*10/29/2;
+        }
+    }
     if((micros() - startTime) > US_TIME_OUT){ //Timeout delay
         for(uint8_t i = 0; i < 4; i++){
             if(!((1 << pins[i]) & found)){
@@ -38,13 +39,9 @@ int8_t Ultrasonic::PollUS(){
             }
         }
         StartPulse();
+        return 1;
     }
-    for(uint8_t i = 0; i < 4; i++){
-        if(!((1 << pins[i]) & found) && ((1 << pins[i]) & ECHO_PORT)){
-            found |= 1 << pins[i];
-            distance[i] = (micros() - startTime)*10/29/2;
-        }
-    }
+    return 0;
 }
 
 uint8_t Ultrasonic::GetResponse(uint8_t pos){
