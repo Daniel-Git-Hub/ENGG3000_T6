@@ -4,7 +4,7 @@
 #define STATUS_FLAG 0x01
 
 
-#define US_TIME_OUT 10000
+#define US_TIME_OUT 2000 //about 500cm
 
 #define TRIGGER_OFFSET 0
 #define ECHO_OFFSET 8
