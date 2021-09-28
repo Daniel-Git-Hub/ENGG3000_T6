@@ -1,4 +1,4 @@
-#include "SpeedEncoder.h"
+#include "../SpeedEncoderLib/SpeedEncoderLib.h"
 
 
 SpeedEncoder motor1(2,3); //instantiate class

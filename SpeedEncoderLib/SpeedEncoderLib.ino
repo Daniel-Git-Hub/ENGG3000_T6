@@ -1,9 +1,6 @@
 
 #include "SpeedEncoder.h"
-
-
-#include <Encoder.h>
-
+#include "../Encoder/Encoder.h"
 
 SpeedEncoder::SpeedEncoder(uint8_t pin1, uint8_t pin2){
     encoder = Encoder(pin1, pin2);

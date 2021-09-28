@@ -1,4 +1,4 @@
-#include "Ultrasonic.h"
+#include "UltrasonicLib.h"
 
 Ultrasonic::Ultrasonic(uint8_t f, uint8_t b, uint8_t b1, uint8_t b2){
     for(uint8_t i = 0; i < 4; i++){

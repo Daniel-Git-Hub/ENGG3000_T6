@@ -4,7 +4,7 @@
 //from https://github.com/PaulStoffregen/Encoder
 #define ENCODER_USE_INTERRUPTS //these are compiler settings for encoder library
 #define ENCODER_OPTIMIZE_INTERRUPTS
-#include <Encoder.h>
+#include "../Encoder/Encoder.h"
 
 //this number needs calibration
 #define ENCODER_TIMESTEP 10
