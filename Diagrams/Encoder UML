@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-29T00:07:26.062Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="ccjFnUy_idSwPUtYB7b5" version="15.3.5" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-29T01:36:48.312Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="HZRanQ_fMzeC9cSUs5uO" version="15.3.5" type="github">
   <diagram id="YDrnQwzXlFilfNfejSe1" name="Page-1">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -81,7 +81,7 @@
           </mxCell>
         </UserObject>
         <mxCell id="oefDksFqanE1w4fAPnzi-17" value="&lt;div style=&quot;display: flex; justify-content: center; text-align: center; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;&quot;&gt;return timeStep&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;arcSize=20;whiteSpace=wrap;overflow=block;blockSpacing=1;html=1;fontSize=13;spacing=0;strokeOpacity=100;fillOpacity=100;fillColor=#ffffff;strokeWidth=2.3;" vertex="1" parent="1">
-          <mxGeometry x="413" y="660" width="188" height="60" as="geometry" />
+          <mxGeometry x="412" y="660" width="188" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oefDksFqanE1w4fAPnzi-18" value="&lt;div style=&quot;display: flex; justify-content: center; text-align: center; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;&quot;&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;&quot;&gt;In Encoder.h, inialise the variables &lt;/span&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;font-style: italic;&quot;&gt;encoder, prevSpeed, finalSpeed, prevRead and posSum&lt;/span&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;&quot;&gt; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;arcSize=20;whiteSpace=wrap;overflow=block;blockSpacing=1;html=1;fontSize=13;spacing=0;strokeOpacity=100;fillOpacity=100;fillColor=#ffffff;strokeWidth=2.3;" vertex="1" parent="1">
           <mxGeometry x="45" y="75" width="263" height="60" as="geometry" />
@@ -117,7 +117,7 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <mxCell id="oefDksFqanE1w4fAPnzi-23" value="&lt;div style=&quot;display: flex; justify-content: center; text-align: center; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;&quot;&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;&quot;&gt;Move to &lt;/span&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;font-weight: bold;&quot;&gt;Update&lt;/span&gt; class&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;arcSize=20;whiteSpace=wrap;overflow=block;blockSpacing=1;html=1;fontSize=13;spacing=0;strokeOpacity=100;fillOpacity=100;fillColor=#ffffff;strokeWidth=2.3;" vertex="1" parent="1">
+        <mxCell id="oefDksFqanE1w4fAPnzi-23" value="&lt;div style=&quot;display: flex ; justify-content: center ; text-align: center ; align-items: baseline ; font-size: 0 ; line-height: 1.25 ; margin-top: -2px&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size: 13.3px ; color: #000000&quot;&gt;&lt;span style=&quot;font-size: 13.3px ; color: #000000&quot;&gt;Execute&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 13.3px ; color: #000000 ; font-weight: bold&quot;&gt;Update&lt;/span&gt; class&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;arcSize=20;whiteSpace=wrap;overflow=block;blockSpacing=1;html=1;fontSize=13;spacing=0;strokeOpacity=100;fillOpacity=100;fillColor=#ffffff;strokeWidth=2.3;" vertex="1" parent="1">
           <mxGeometry x="555" y="225" width="150" height="60" as="geometry" />
         </mxCell>
         <UserObject label="" lucidchartObjectId="3xHdvtmXo~p." id="oefDksFqanE1w4fAPnzi-24">
@@ -134,8 +134,8 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <mxCell id="oefDksFqanE1w4fAPnzi-26" value="&lt;div style=&quot;display: flex; justify-content: center; text-align: center; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;&quot;&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;&quot;&gt;Inside &lt;/span&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;&quot;&gt;the &lt;/span&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;font-weight: bold;&quot;&gt;GetSpeed &lt;/span&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;&quot;&gt;class return &lt;/span&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;font-style: italic;&quot;&gt;finalSpeed&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;arcSize=20;whiteSpace=wrap;overflow=block;blockSpacing=1;html=1;fontSize=13;spacing=0;strokeOpacity=100;fillOpacity=100;fillColor=#ffffff;strokeWidth=2.3;" vertex="1" parent="1">
-          <mxGeometry x="446" y="525" width="120" height="60" as="geometry" />
+        <mxCell id="oefDksFqanE1w4fAPnzi-26" value="&lt;div style=&quot;display: flex ; justify-content: center ; text-align: center ; align-items: baseline ; font-size: 0 ; line-height: 1.25 ; margin-top: -2px&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size: 13.3px ; color: #000000&quot;&gt;&lt;span style=&quot;font-size: 13.3px ; color: #000000&quot;&gt;Execute&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 13.3px ; color: #000000&quot;&gt;the &lt;/span&gt;&lt;span style=&quot;font-size: 13.3px ; color: #000000 ; font-weight: bold&quot;&gt;GetSpeed &lt;/span&gt;&lt;span style=&quot;font-size: 13.3px ; color: #000000&quot;&gt;class and&amp;nbsp; return &lt;/span&gt;&lt;span style=&quot;font-size: 13.3px ; color: #000000 ; font-style: italic&quot;&gt;finalSpeed&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;arcSize=20;whiteSpace=wrap;overflow=block;blockSpacing=1;html=1;fontSize=13;spacing=0;strokeOpacity=100;fillOpacity=100;fillColor=#ffffff;strokeWidth=2.3;" vertex="1" parent="1">
+          <mxGeometry x="444" y="525" width="124" height="75" as="geometry" />
         </mxCell>
         <UserObject label="" lucidchartObjectId="oAHdl36BUVYy" id="oefDksFqanE1w4fAPnzi-27">
           <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=13;strokeOpacity=100;strokeWidth=1.5;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=0.5;exitY=-0.019;exitPerimeter=0;entryX=0.5;entryY=1.019;entryPerimeter=0;" edge="1" parent="1" source="oefDksFqanE1w4fAPnzi-26" target="oefDksFqanE1w4fAPnzi-28">
@@ -144,8 +144,8 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <mxCell id="oefDksFqanE1w4fAPnzi-28" value="&lt;div style=&quot;display: flex; justify-content: center; text-align: center; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;&quot;&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;&quot;&gt;Inside the &lt;/span&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;font-weight: bold;&quot;&gt;GetPos &lt;/span&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;&quot;&gt;class reutrn &lt;/span&gt;&lt;span style=&quot;font-size:13.3px;color:#000000;font-style: italic;&quot;&gt;posSum&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;arcSize=20;whiteSpace=wrap;overflow=block;blockSpacing=1;html=1;fontSize=13;spacing=0;strokeOpacity=100;fillOpacity=100;fillColor=#ffffff;strokeWidth=2.3;" vertex="1" parent="1">
-          <mxGeometry x="446" y="421" width="120" height="60" as="geometry" />
+        <mxCell id="oefDksFqanE1w4fAPnzi-28" value="&lt;div style=&quot;display: flex ; justify-content: center ; text-align: center ; align-items: baseline ; font-size: 0 ; line-height: 1.25 ; margin-top: -2px&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size: 13.3px ; color: #000000&quot;&gt;&lt;span style=&quot;font-size: 13.3px ; color: #000000&quot;&gt;Execute the &lt;/span&gt;&lt;span style=&quot;font-size: 13.3px ; color: #000000 ; font-weight: bold&quot;&gt;GetPos&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 13.3px ; color: #000000&quot;&gt;class and reutrn &lt;/span&gt;&lt;span style=&quot;font-size: 13.3px ; color: #000000 ; font-style: italic&quot;&gt;posSum&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;arcSize=20;whiteSpace=wrap;overflow=block;blockSpacing=1;html=1;fontSize=13;spacing=0;strokeOpacity=100;fillOpacity=100;fillColor=#ffffff;strokeWidth=2.3;" vertex="1" parent="1">
+          <mxGeometry x="446" y="421" width="124" height="69" as="geometry" />
         </mxCell>
         <UserObject label="" lucidchartObjectId="lBHdzD_NdfFt" id="oefDksFqanE1w4fAPnzi-29">
           <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;ellipse;fillColor=#000000;whiteSpace=wrap;fontSize=13;spacing=0;strokeOpacity=100;fillOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;strokeWidth=2.3;" vertex="1" parent="1">
@@ -163,8 +163,9 @@
           <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=13;strokeOpacity=100;strokeWidth=1.5;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=-0.009;exitY=0.5;exitPerimeter=0;entryX=1.009;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="oefDksFqanE1w4fAPnzi-6" target="oefDksFqanE1w4fAPnzi-26">
             <mxGeometry width="100" height="100" relative="1" as="geometry">
               <Array as="points">
-                <mxPoint x="590" y="450" />
-                <mxPoint x="590" y="555" />
+                <mxPoint x="620" y="450" />
+                <mxPoint x="620" y="555" />
+                <mxPoint x="569" y="555" />
               </Array>
             </mxGeometry>
           </mxCell>
