@@ -12,7 +12,7 @@ int8_t LaserGate::Update(){
     if(!startTime){
       startTime = millis();
       state = LG_STATE_UNDECIDED;
-    }else if((millis()-startTime) >= LG_TIMEOUT){
+    }else if((millis()-startTime) >= timeout){
       state = LG_STATE_FULL;
     }
   }else{
@@ -24,4 +24,8 @@ int8_t LaserGate::Update(){
 
 int8_t LaserGate::GetState(){
     return state;
+}
+
+void LaserGate::SetTimeout(unsigned long to){
+  timeout = to;
 }
