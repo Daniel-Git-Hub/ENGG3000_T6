@@ -1,18 +1,18 @@
 
 #include "LaserGateLib.h"
 
-LaserGate::LaserGate(uint8_t pin){
+LaserGate::LaserGate(uint8_t pin) {
     laserPin = pin;
     startTime = 0;
     pinMode(pin, INPUT);
 }
 
-int8_t LaserGate::Update(){
-  if(digitalRead(laserPin)){
-    if(!startTime){
+int8_t LaserGate::Update() {
+  if(digitalRead(laserPin)) {
+    if(!startTime) {
       startTime = millis();
       state = LG_STATE_UNDECIDED;
-    }else if((millis()-startTime) >= timeout){
+    }else if((millis()-startTime) >= timeout) {
       state = LG_STATE_FULL;
     }
   }else{
@@ -22,10 +22,10 @@ int8_t LaserGate::Update(){
   return state;
 }
 
-int8_t LaserGate::GetState(){
+int8_t LaserGate::GetState() {
     return state;
 }
 
-void LaserGate::SetTimeout(unsigned long to){
+void LaserGate::SetTimeout(unsigned long to) {
   timeout = to;
 }

@@ -64,5 +64,5 @@ int8_t PID::ResetForceOff(){
 
 int8_t PID::SetSpeed(int16_t speed){
     setPoint = map(speed, INPUT_MIN, INPUT_MAX, ENCODER_MIN, ENCODER_MAX);
-    return setPoint;
+    return
 }

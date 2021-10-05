@@ -2,13 +2,13 @@
 
 LaserGate lg(5); //defines the varName as 'lg' and to use pin 5
 
-void setup(){
+void setup() {
   Serial.begin(115200);
   lg.SetTimeout(4000); //sets the timeout to be 4 seconds
 }
 
-void loop(){
-  switch (lg.Update()){
+void loop() {
+  switch (lg.Update()) {
     case LG_STATE_EMPTY:
       Serial.println("Ball collection empty");
       break;

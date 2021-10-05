@@ -1,7 +1,7 @@
 #ifndef _PID_HEADER_H
 #define _PID_HEADER_H
 
-#include "SpeedEncoder.h"
+#include <SpeedEncoder.h>
 #include <Servo.h>
 
 #define MOTOR_OFF 1500 //safely in the dead zone

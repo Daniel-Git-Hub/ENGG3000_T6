@@ -50,19 +50,19 @@ Does not need to be called, the timeout will default to 2000 milliseconds
 length: unsigned long, this is the time in milliseconds
 
 ##Example
-*This code can be seen in the LaseGateTest folder*
+*This code can be seen in examples folder*
 ```cpp
 #include <LaserGateLib.h>
 
 LaserGate lg(5); //defines the varName as 'lg' and to use pin 5
 
-void setup(){
+void setup() {
   Serial.begin(115200);
   lg.SetTimeout(4000); //sets the timeout to be 4 seconds
 }
 
-void loop(){
-  switch (lg.Update()){
+void loop() {
+  switch (lg.Update()) {
     case LG_STATE_EMPTY:
       Serial.println("Ball collection empty");
       break;
