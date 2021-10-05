@@ -4,13 +4,17 @@
 #include "SpeedEncoder.h"
 #include <Servo.h>
 
-#define MOTOR_OFF 1480 //safely in the dead zone
+#define MOTOR_OFF 1500 //safely in the dead zone
 
 #define MOTOR_MIN 1000
 #define MOTOR_MAX 2000
 
 #define ENCODER_MIN -100 //this 'should' be the negative to ENCODER_MAX
 #define ENCODER_MAX 100 //in encoder pulses per millis
+
+#define INPUT_MIN -32768
+#define INPUT_MAX 32768
+
 
 class PID{
     private:
@@ -28,6 +32,7 @@ class PID{
     float lastError = 0; //this is used to calculate the instantnous derivative 
 
     Servo motor;
+
     int16_t outputSpeed = 0;
     int16_t mappedOutputSpeed = 0;
 
@@ -36,7 +41,7 @@ class PID{
 
     public:
     //Desired Speed
-    uint16_t setPoint;
+    int16_t setPoint;
 
     PID(uint8_t,uint8_t,uint8_t);
     
@@ -47,7 +52,7 @@ class PID{
     int32_t GetPos();
     void ForceOff();
     int8_t ResetForceOff();
-
+    int8_t SetSpeed(int16_t);
 }
 
 
