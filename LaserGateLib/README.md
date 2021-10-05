@@ -6,6 +6,7 @@
 ```cpp
 LaserGate varName(pinNumber);
 ```
+
 **Notes**
 varName is the variables name (arbitary)
 
@@ -16,7 +17,9 @@ Pin number: This is the pin that the laser gate sensor is attached to
 ```cpp
 varName.Update();
 ```
+
 **Notes**
+
 MUST be called every loop
 
 **Returns**
@@ -34,7 +37,9 @@ varName.GetState()
 ```
 
 **Returns**
+
 Will return the last result from update
+
 
 ### SetTimeout
 ```cpp
@@ -42,11 +47,13 @@ varName.SetTimeout(length);
 ```
 
 **Notes**
+
 This will set how long the sensor needs to be broken before the reservoir will detect as full.
 
 Does not need to be called, the timeout will default to 2000 milliseconds
 
 **Params**
+
 length: unsigned long, this is the time in milliseconds
 
 ##Example
