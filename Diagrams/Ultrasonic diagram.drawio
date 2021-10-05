@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-05T23:03:38.293Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="iD9i6Cbkv3-j1bVuMqzL" version="15.3.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-05T23:03:56.846Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="qHjBXk7VqBp12cbImfS0" version="15.3.7" type="github">
   <diagram id="23gbs6PRRigID9WzYWSW" name="Library Inheritance">
     <mxGraphModel dx="1186" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -38,9 +38,6 @@
         </mxCell>
         <mxCell id="RDGCTlYvT_do_cj032Q4-6" value="Ultrasonic Constructor&lt;br&gt;Sets trigger and echo pins&lt;br&gt;creates array of distances&amp;nbsp;&lt;br&gt;calls startPulse" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="1090" y="230" width="120" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="S-yS9oSUxoczkZgkFleL-3" value="startTime" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1250" y="380" width="70" height="20" as="geometry" />
         </mxCell>
         <mxCell id="5AeRxl9TvQMXXWB_UQcx-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.017;entryY=0.59;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="5AeRxl9TvQMXXWB_UQcx-1" target="RDGCTlYvT_do_cj032Q4-6">
           <mxGeometry relative="1" as="geometry" />
