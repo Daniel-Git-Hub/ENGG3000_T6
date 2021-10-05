@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-05T23:03:56.846Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="qHjBXk7VqBp12cbImfS0" version="15.3.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-05T23:46:30.026Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="FehiegFfUZD9ESxvVxM3" version="15.4.3" type="github">
   <diagram id="23gbs6PRRigID9WzYWSW" name="Library Inheritance">
-    <mxGraphModel dx="1186" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -18,17 +18,20 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="5AeRxl9TvQMXXWB_UQcx-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RDGCTlYvT_do_cj032Q4-2" target="RDGCTlYvT_do_cj032Q4-3">
+        <mxCell id="5AeRxl9TvQMXXWB_UQcx-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="RDGCTlYvT_do_cj032Q4-2" target="RDGCTlYvT_do_cj032Q4-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RDGCTlYvT_do_cj032Q4-2" value="PollUS()&lt;br&gt;waits for response and calcs distance of received pulse puts it into distance array&lt;br&gt;returns 1 on time out and 0 on sucessful distance calculated&lt;br&gt;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1310" y="200" width="120" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="5AeRxl9TvQMXXWB_UQcx-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RDGCTlYvT_do_cj032Q4-3" target="RDGCTlYvT_do_cj032Q4-4">
+        <mxCell id="5AeRxl9TvQMXXWB_UQcx-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="RDGCTlYvT_do_cj032Q4-3" target="RDGCTlYvT_do_cj032Q4-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RDGCTlYvT_do_cj032Q4-3" value="GetResponse()&lt;br&gt;returns the distance at index of input pos on distance array" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1550" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R3AV7CYG4bPrG0PTNU2u-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RDGCTlYvT_do_cj032Q4-4" target="R3AV7CYG4bPrG0PTNU2u-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RDGCTlYvT_do_cj032Q4-4" value="GetRotation()&lt;br&gt;Uses the distance[0] and distance[1] to determine which direction the robot is turning&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="1760" y="240" width="120" height="90" as="geometry" />
@@ -39,14 +42,17 @@
         <mxCell id="RDGCTlYvT_do_cj032Q4-6" value="Ultrasonic Constructor&lt;br&gt;Sets trigger and echo pins&lt;br&gt;creates array of distances&amp;nbsp;&lt;br&gt;calls startPulse" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="1090" y="230" width="120" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="5AeRxl9TvQMXXWB_UQcx-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.017;entryY=0.59;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="5AeRxl9TvQMXXWB_UQcx-1" target="RDGCTlYvT_do_cj032Q4-6">
+        <mxCell id="5AeRxl9TvQMXXWB_UQcx-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.017;entryY=0.59;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="5AeRxl9TvQMXXWB_UQcx-1" target="RDGCTlYvT_do_cj032Q4-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="" lucidchartObjectId="lBHdzD_NdfFt" id="5AeRxl9TvQMXXWB_UQcx-1">
-          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;ellipse;fillColor=#000000;whiteSpace=wrap;fontSize=13;spacing=0;strokeOpacity=100;fillOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;strokeWidth=2.3;" vertex="1" parent="1">
+          <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;ellipse;fillColor=#000000;whiteSpace=wrap;fontSize=13;spacing=0;strokeOpacity=100;fillOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;strokeWidth=2.3;" parent="1" vertex="1">
             <mxGeometry x="1000" y="270" width="30" height="30" as="geometry" />
           </mxCell>
         </UserObject>
+        <mxCell id="R3AV7CYG4bPrG0PTNU2u-1" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="270" width="30" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
