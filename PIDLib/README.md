@@ -46,7 +46,7 @@ void
 
 ### Update
 ```cpp
-int8_t update varName.Update();
+int8_t update = varName.Update();
 ```
 
 
