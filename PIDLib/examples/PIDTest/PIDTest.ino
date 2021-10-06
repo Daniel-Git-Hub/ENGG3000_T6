@@ -7,7 +7,7 @@ PID pid(9,2,3); //instantiate class
 void setup() {
     Serial.begin(115200);
     pid.SetGains(1,1,1); //in the order of, P I D
-    pid.setPoint = 500; //in encoder ticks per millis
+    pid.SetSpeed(32000); //in encoder ticks per millis
 }
 
 void loop() {

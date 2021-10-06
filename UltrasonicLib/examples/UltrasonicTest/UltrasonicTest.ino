@@ -1,5 +1,5 @@
 
-#include "../UltrasonicLib/UltrasonicLib.h"
+#include <UltrasonicLib.h>
 
 //All params pin placement on the board. 
 //Currently using port B for trigger and port D for echo

@@ -1,9 +1,9 @@
 
-#include "SpeedEncoder.h"
-#include "../Encoder/Encoder.h"
+#include "SpeedEncoderLib.h"
+#include <Encoder.h>
 
 SpeedEncoder::SpeedEncoder(uint8_t pin1, uint8_t pin2){
-    encoder = Encoder(pin1, pin2);
+    encoder = new Encoder(pin1, pin2);
     posSum = 0;
     prevSpeed = 0;
     finalSpeed = 0;
@@ -12,7 +12,7 @@ SpeedEncoder::SpeedEncoder(uint8_t pin1, uint8_t pin2){
 uint16_t SpeedEncoder::Update(){
     unsigned long timeStep = (millis()-prevRead);
     if(timeStep >= ENCODER_TIMESTEP){
-        int32_t pos = encoder.readAndReset();
+        int32_t pos = encoder->readAndReset();
         float newSpeed = (1.0 * pos)/timeStep;
         finalSpeed = (newSpeed+prevSpeed)/2;
 

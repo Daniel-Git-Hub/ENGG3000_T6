@@ -1,6 +1,8 @@
 #ifndef _LASER_HEADER_H
 #define _LASER_HEADER_H
 
+#include <Arduino.h>
+
 #define LG_DEFAULT_TIMEOUT 2000
 
 #define LG_STATE_EMPTY 0

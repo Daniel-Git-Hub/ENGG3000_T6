@@ -1,6 +1,8 @@
 #ifndef _DEF_ULTRA_HEADER
 #define _DEF_ULTRA_HEADER
 
+#include <Arduino.h>
+
 #define STATUS_FLAG 0x01
 
 

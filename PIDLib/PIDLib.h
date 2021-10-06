@@ -1,7 +1,8 @@
 #ifndef _PID_HEADER_H
 #define _PID_HEADER_H
 
-#include <SpeedEncoder.h>
+#include <Arduino.h>
+#include <SpeedEncoderLib.h>
 #include <Servo.h>
 
 #define MOTOR_OFF 1500 //safely in the dead zone
@@ -26,7 +27,7 @@ class PID{
 
     uint8_t motorPin;
     
-    SpeedEncoder speedEncoder;
+    SpeedEncoder *speedEncoder;
 
     float cumError = 0; //where the intergral is the cumerlative error
     float lastError = 0; //this is used to calculate the instantnous derivative 
@@ -52,8 +53,8 @@ class PID{
     int32_t GetPos();
     void ForceOff();
     int8_t ResetForceOff();
-    int8_t SetSpeed(int16_t);
-}
+    int16_t SetSpeed(int16_t);
+};
 
 
 
