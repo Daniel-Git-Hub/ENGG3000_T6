@@ -74,7 +74,74 @@ uint16_t realSpeed = varName.SetSpeed(newSpeed);
 ```
 
 
+**Parameters**
 
+newSpeed: int16_t, uses the full range 
+
+Example
+
+| value | result |
+| --- | --- |
+| −32,768 | Full speed reverse |
+| -16,384 | Half speed reverse |
+| 0 | Motor stopped |
+| 16384 | Half speed forward |
+| 32,767 | Full. speed forward |
+
+Obviously any number in the range −32,768 to 32,767 can be used
+
+**Returns**
+
+Return type: int16_t
+
+This is the mapped speed of parameter mapped to encoder pulses per millisecond (an arbitary unit)
+This is propably useless to any user
+
+
+### ForceOff
+```cpp
+varName.ForceOff();
+```
+
+
+**Notes**
+
+The emergancy off for the motor, this will make this class NOT be able to turn back on the motor until ResetForceOff is called
+
+
+**Parameters**
+
+void
+
+
+**Returns**
+
+void
+
+
+
+### ResetForceOff
+```cpp
+int8_t result = varName.ResetForceOff();
+```
+
+**Notes**
+
+Allows the motor to be controlled again, used after emergancy off is called
+
+**Parameters**
+
+void
+
+
+**Returns**
+
+Return type: int8_t
+
+| value | meaning |
+| --- | --- | 
+| 0 | The motor was not in a force off state, so no chnage occured |
+| 1 | The motor was in the force off state and has now been removed from it |
 
 
 ### The following are most likely not going to be ever used, but they expose internal variables and might be useful for debugging
