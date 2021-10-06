@@ -1,14 +1,8 @@
 
 #include <UltrasonicLib.h>
 
-//All params pin placement on the board. 
-//Currently using port B for trigger and port D for echo
-Ultrasonic US (2,3,4,5);
-//Example lists the phyiscal pins
-//Forward sensor:    ECHO: PD2; TRIGGER: PB2
-//Back sensor:       ECHO: PD3; TRIGGER: PB3
-//Ball detect 1:     ECHO: PD4; TRIGGER: PB4
-//Ball detect 2:     ECHO: PD5; TRIGGER: PB5
+//Pin order is Forward Trigger, Forward Echo, Backward Trigger, Backward Echo, Ball detect 1 Trigger, Ball detect 1 Echo, Ball detect 2 Trigger, Ball detect 2 Echo
+Ultrasonic US (2,3,4,5,6,7,8,9);
 
 void setup() {
     Serial.begin(115200);

@@ -1,40 +1,46 @@
 #include "UltrasonicLib.h"
 
-Ultrasonic::Ultrasonic(uint8_t f, uint8_t b, uint8_t b1, uint8_t b2) {
+Ultrasonic::Ultrasonic(uint8_t f1, uint8_t f2, uint8_t b1, uint8_t b2, uint8_t d11, uint8_t d12, uint8_t d21, uint8_t d22) {
     for(uint8_t i = 0; i < 4; i++) {
         distance[i] = 0;
     }
-    pins[US_FORWARD] = f;
-    pins[US_BACK] = b;
-    pins[US_BALL_1] = b1;
-    pins[US_BALL_2] = b2;
-    pinMask = (1 << f) | (1 << b) | (1 << b1) | (1 << b2); 
+    triggerPin[US_FORWARD] = f1;
+    triggerPin[US_BACK] = b1;
+    triggerPin[US_BALL_1] = d11;
+    triggerPin[US_BALL_2] = d21;
+    echoPin[US_FORWARD] = f2;
+    echoPin[US_BACK] = b2;
+    echoPin[US_BALL_1] = d12;
+    echoPin[US_BALL_2] = d22;
     
-    TRIGGER_DDR |= pinMask; //make sure trigger pins are output
-    ECHO_DDR &= ~pinMask;   //make sure echo pins are input
-
     StartPulse();
 }
 
 void Ultrasonic::StartPulse() {
-        TRIGGER_PIN |= pinMask;
-        delayMicroseconds(10);
-        TRIGGER_PIN &= ~pinMask;
+    for(uint8_t i = 0; i < 4; i++) {
+        digitalWrite(triggerPin[i], HIGH);
+    }
 
-        startTime = micros();
-        found = 0;
+    delayMicroseconds(10); //I hate having a delay here
+    
+    for(uint8_t i = 0; i < 4; i++) {
+        digitalWrite(triggerPin[i], LOW);
+    }
+    
+    startTime = micros();
+    found = 0;
 }
 
 int8_t Ultrasonic::PollUS() {
     for(uint8_t i = 0; i < 4; i++) {
-        if(!((1 << pins[i]) & found) && ((1 << pins[i]) & ECHO_PORT)) {
-            found |= 1 << pins[i];
+        if(!((1 << i) & found) && digitalRead(echoPin[i])){
+            found |= 1 << i;
             distance[i] = (micros() - startTime)*10/29/2;
         }
     }
     if((micros() - startTime) > US_TIME_OUT) { //Timeout delay
         for(uint8_t i = 0; i < 4; i++) {
-            if(!((1 << pins[i]) & found)) {
+            if(!((1 << i) & found)) {
                 distance[i] = 0;
             }
         }
