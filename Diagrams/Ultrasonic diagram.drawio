@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-05T23:46:30.026Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="FehiegFfUZD9ESxvVxM3" version="15.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-06T00:43:38.859Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="ePh30DHqtzS_ELrgGuCP" version="15.4.3" type="github">
   <diagram id="23gbs6PRRigID9WzYWSW" name="Library Inheritance">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -28,30 +28,30 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RDGCTlYvT_do_cj032Q4-3" value="GetResponse()&lt;br&gt;returns the distance at index of input pos on distance array" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1550" y="240" width="120" height="60" as="geometry" />
+          <mxGeometry x="1430" y="370" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="R3AV7CYG4bPrG0PTNU2u-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RDGCTlYvT_do_cj032Q4-4" target="R3AV7CYG4bPrG0PTNU2u-1">
+        <mxCell id="NTc_H1odojwAItOC1fbx-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RDGCTlYvT_do_cj032Q4-4" target="R3AV7CYG4bPrG0PTNU2u-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RDGCTlYvT_do_cj032Q4-4" value="GetRotation()&lt;br&gt;Uses the distance[0] and distance[1] to determine which direction the robot is turning&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="1760" y="240" width="120" height="90" as="geometry" />
+          <mxGeometry x="1530" y="235" width="120" height="90" as="geometry" />
         </mxCell>
         <mxCell id="RDGCTlYvT_do_cj032Q4-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="RDGCTlYvT_do_cj032Q4-6" target="wjIySHNyMZ0HqPHrgx6V-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RDGCTlYvT_do_cj032Q4-6" value="Ultrasonic Constructor&lt;br&gt;Sets trigger and echo pins&lt;br&gt;creates array of distances&amp;nbsp;&lt;br&gt;calls startPulse" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="1090" y="230" width="120" height="100" as="geometry" />
+          <mxGeometry x="1170" y="265" width="120" height="100" as="geometry" />
         </mxCell>
         <mxCell id="5AeRxl9TvQMXXWB_UQcx-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.017;entryY=0.59;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="5AeRxl9TvQMXXWB_UQcx-1" target="RDGCTlYvT_do_cj032Q4-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="" lucidchartObjectId="lBHdzD_NdfFt" id="5AeRxl9TvQMXXWB_UQcx-1">
           <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;ellipse;fillColor=#000000;whiteSpace=wrap;fontSize=13;spacing=0;strokeOpacity=100;fillOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;strokeWidth=2.3;" parent="1" vertex="1">
-            <mxGeometry x="1000" y="270" width="30" height="30" as="geometry" />
+            <mxGeometry x="1090" y="280" width="30" height="30" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="R3AV7CYG4bPrG0PTNU2u-1" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="1980" y="270" width="30" height="30" as="geometry" />
+        <mxCell id="R3AV7CYG4bPrG0PTNU2u-1" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1710" y="265" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
