@@ -146,7 +146,7 @@ Return type: int8_t
 
 | value | meaning |
 | --- | --- | 
-| 0 | The motor was not in a force off state, so no chnage occured |
+| 0 | The motor was not in a force off state, so no change occured |
 | 1 | The motor was in the force off state and has now been removed from it |
 
 
