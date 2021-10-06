@@ -1,7 +1,7 @@
 #include "UltrasonicLib.h"
 
-Ultrasonic::Ultrasonic(uint8_t f, uint8_t b, uint8_t b1, uint8_t b2){
-    for(uint8_t i = 0; i < 4; i++){
+Ultrasonic::Ultrasonic(uint8_t f, uint8_t b, uint8_t b1, uint8_t b2) {
+    for(uint8_t i = 0; i < 4; i++) {
         distance[i] = 0;
     }
     pins[0] = f;
@@ -16,7 +16,7 @@ Ultrasonic::Ultrasonic(uint8_t f, uint8_t b, uint8_t b1, uint8_t b2){
     StartPulse();
 }
 
-void Ultrasonic::StartPulse(){
+void Ultrasonic::StartPulse() {
         TRIGGER_PIN |= pinMask;
         delayMicroseconds(10);
         TRIGGER_PIN &= ~pinMask;
@@ -25,16 +25,16 @@ void Ultrasonic::StartPulse(){
         found = 0;
 }
 
-int8_t Ultrasonic::PollUS(){
-    for(uint8_t i = 0; i < 4; i++){
-        if(!((1 << pins[i]) & found) && ((1 << pins[i]) & ECHO_PORT)){
+int8_t Ultrasonic::PollUS() {
+    for(uint8_t i = 0; i < 4; i++) {
+        if(!((1 << pins[i]) & found) && ((1 << pins[i]) & ECHO_PORT)) {
             found |= 1 << pins[i];
             distance[i] = (micros() - startTime)*10/29/2;
         }
     }
-    if((micros() - startTime) > US_TIME_OUT){ //Timeout delay
-        for(uint8_t i = 0; i < 4; i++){
-            if(!((1 << pins[i]) & found)){
+    if((micros() - startTime) > US_TIME_OUT) { //Timeout delay
+        for(uint8_t i = 0; i < 4; i++) {
+            if(!((1 << pins[i]) & found)) {
                 distance[i] = 0;
             }
         }
@@ -44,18 +44,18 @@ int8_t Ultrasonic::PollUS(){
     return 0;
 }
 
-uint8_t Ultrasonic::GetResponse(uint8_t pos){
+uint8_t Ultrasonic::GetResponse(uint8_t pos) {
     return distance[pos];
 }
 
 
-uint8_t Ultrasonic::GetRotation(){
-    if(distance[0] && distance[1]){
+uint8_t Ultrasonic::GetRotation() {
+    if(distance[0] && distance[1]) {
         int16_t difference = ((int16_t)distance[0]) - distance[1];
         uint8_t absDif = (difference > 0) ? difference : difference*-1;
-        if(absDif < ROTATION_ERROR_MARGIN){
+        if(absDif < ROTATION_ERROR_MARGIN) {
             return ROTATION_CORRECT;
-        }else if(difference < 0){
+        }else if(difference < 0) {
             return ROTATION_CLOCKWISE;
         }
         return ROTATION_ANTICLOCKWISE;
