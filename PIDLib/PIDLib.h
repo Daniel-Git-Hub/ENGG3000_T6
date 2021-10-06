@@ -10,6 +10,7 @@
 #define MOTOR_MIN 1000
 #define MOTOR_MAX 2000
 
+//This will be found by motions by running the motor at max speed and recording the encoders speed at that stage
 #define ENCODER_MIN -100 //this 'should' be the negative to ENCODER_MAX
 #define ENCODER_MAX 100 //in encoder pulses per millis
 
