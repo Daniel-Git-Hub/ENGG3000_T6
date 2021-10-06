@@ -15,7 +15,7 @@ int8_t LaserGate::Update() {
     }else if((millis()-startTime) >= timeout) {
       state = LG_STATE_FULL;
     }
-  }else{
+  }else {
     startTime = 0;
     state = LG_STATE_EMPTY;
   }
