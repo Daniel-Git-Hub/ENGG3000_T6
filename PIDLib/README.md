@@ -1,5 +1,9 @@
 # PID library
 
+## Note
+
+This library extends the SpeedEncoder class and allows for it's output to be feed into a PID closed loop controller
+
 ## Endpoints
 
 ### Instantiate
