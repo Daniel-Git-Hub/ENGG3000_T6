@@ -36,6 +36,11 @@ int8_t Ultrasonic::Update() {
         if(!((1 << i) & found) && digitalRead(echoPin[i])){
             found |= 1 << i;
             distance[i] = (micros() - startTime)*10/29/2;
+
+            if(!distance[i]){ //this prevents an object right next to the sensor making this value 0, which corresponds to no sdistance found
+                distance[i] = 1;
+            }
+            
         }
     }
     if((micros() - startTime) > US_TIME_OUT) { //Timeout delay

@@ -5,7 +5,7 @@
 
 #define STATUS_FLAG 0x01
 
-#define US_TIME_OUT 2000 //about 500cm
+#define US_TIME_OUT 2000 //about 367cm
 
 #define US_FORWARD 0
 #define US_BACK 1
@@ -28,12 +28,12 @@ class Ultrasonic {
         uint8_t triggerPin[4];
         uint8_t echoPin[4];
         uint8_t found;
-        unsigned long distance[4];
+        uint16_t distance[4];
 
     public:
         Ultrasonic(uint8_t,uint8_t,uint8_t,uint8_t,uint8_t,uint8_t,uint8_t,uint8_t);
         int8_t Update();
-        uint8_t GetResponse(uint8_t);
+        uint16_t GetResponse(uint8_t);
         int8_t GetRotation();
         void StartPulse();
         int8_t IsBall();
