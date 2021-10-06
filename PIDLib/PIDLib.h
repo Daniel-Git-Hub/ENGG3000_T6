@@ -17,7 +17,7 @@
 #define INPUT_MAX 32768
 
 
-class PID{
+class PID {
     private:
 
     //PID gains
