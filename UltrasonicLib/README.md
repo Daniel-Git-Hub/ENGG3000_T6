@@ -2,7 +2,7 @@
 
 ## Notes
 
-Highly customised for our usage in for the robot
+Highly customised for our usage in for our robot
 
 ## Endpoints
 
@@ -13,3 +13,5 @@ Ultrasonic varName(forwardUSPin, backwardUSPin, balldetect1, balldetect2);
 
 
 **Parameters**
+
+forwardUSPin: This is the bit location that the forwards ultrasonic sensor is on the the 
