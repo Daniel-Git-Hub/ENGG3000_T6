@@ -1,8 +1,6 @@
 # ENGG3000_T6_Comms_B
 
-## How to use
-
-**1. Install**
+## How to use / Installation
 
 From the library manager (in the Arduino IDE either Ctrl+Shift+I or Sketch->Include Library->Manage Libraries) search for 'encoder' and install the one writtern by 'Paul Stoff Regen'
 
