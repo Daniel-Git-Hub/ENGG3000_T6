@@ -22,7 +22,7 @@ Docuements
     ->LaserGateLib
     
     
-## 2. Basic Use
+## Basic Use
 
 A basic example for each of the libraries can be found in File->Examples (these examples will be near the bottom)
 This is also a sanity check as if the examples don't apear here it means the libraries aren't installed properly
