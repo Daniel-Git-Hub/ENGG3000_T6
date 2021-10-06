@@ -15,7 +15,7 @@ void setup() {
 }
 
 void loop() {
-	if(US.PollUS()){
+	if(US.PollUS()) {
       Serial.print("Distance For : ");
       Serial.println(US.GetResponse(0));
       Serial.print("Distance Back : ");
@@ -25,7 +25,7 @@ void loop() {
       Serial.print("Ball Detect 2: ");
       Serial.println(US.GetResponse(4));
       Serial.print("Suggestyed rotation");
-      switch(US.GetRotation()){
+      switch(US.GetRotation()) {
           case ROTATION_INVALID:
               Serial.println("Distance is not valid");
               break;
