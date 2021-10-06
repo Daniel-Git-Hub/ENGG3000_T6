@@ -32,7 +32,7 @@ class Ultrasonic {
 
     public:
         Ultrasonic(uint8_t,uint8_t,uint8_t,uint8_t,uint8_t,uint8_t,uint8_t,uint8_t);
-        int8_t PollUS();
+        int8_t Update();
         uint8_t GetResponse(uint8_t);
         int8_t GetRotation();
         void StartPulse();

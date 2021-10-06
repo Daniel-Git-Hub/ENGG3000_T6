@@ -26,12 +26,12 @@ void Ultrasonic::StartPulse() {
     for(uint8_t i = 0; i < 4; i++) {
         digitalWrite(triggerPin[i], LOW);
     }
-    
+
     startTime = micros();
     found = 0;
 }
 
-int8_t Ultrasonic::PollUS() {
+int8_t Ultrasonic::Update() {
     for(uint8_t i = 0; i < 4; i++) {
         if(!((1 << i) & found) && digitalRead(echoPin[i])){
             found |= 1 << i;
