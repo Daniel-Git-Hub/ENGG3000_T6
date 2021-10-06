@@ -14,7 +14,7 @@
 #define ENCODER_MAX 100 //in encoder pulses per millis
 
 #define INPUT_MIN -32768
-#define INPUT_MAX 32768
+#define INPUT_MAX 32767
 
 
 class PID {
