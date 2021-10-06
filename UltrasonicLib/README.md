@@ -68,10 +68,52 @@ This is the index in the distance array, as this is arbitary there are defined c
 | US_BALL_1 | 2 | The First Ball Detect sensor |
 | US_BALL_2 | 3 | The Second Ball Detect sensor |
 
-An example is `varNmae(US_FORWARD)`
+An example is `varName(US_FORWARD)`
 
 **Returns**
 
 An unsigned 16 bit number of the distance in millimeters.
 
 If no distance was found (i.e the pulse timedout without a response) it will return 0 instead
+
+
+
+### GetRotation
+```cpp
+int8_t result = varName.GetRotation();
+```
+
+
+**Parameters**
+
+void
+
+
+**Returns**
+
+| Constant name | Value | Meaning |
+| --- | --- | --- |
+| ROTATION_INVALID | 0 | One or both of the orientation sensors can not detect a distance |
+| ROTATION_CORRECT | 1 | Both orientation sensors are see the same distance (within a small error margin) this means the robot does not need to rotated to correct orientation to the bridge|
+| ROTATION_CLOCKWISE | 2 | The robot needs to rotate clockwise to corrent orientation |
+| ROTATION_ANTICLOCKWISE | 3 | The robot needs to rotate anti-clockwise to corrent orientation |
+
+
+
+### IsBall
+```cpp
+int8_t result = varName.IsBall();
+```
+
+
+**Parameters**
+
+void
+
+
+**Returns**
+
+| Constant name | Value | Meaning |
+| --- | --- | --- |
+| BALL_NOT_DETECTED | 0 | Neither of the front sensors have detected any object within a specified distance (100mm) |
+| BALL_DETECTED | 1 | One or both of the front sensors have detected an object within range |
