@@ -9,7 +9,7 @@ void setup() {
 }
 
 void loop() {
-	if(US.PollUS()) {
+	if(US.Update()) {
       Serial.print("Distance For : ");
       Serial.println(US.GetResponse(0));
       Serial.print("Distance Back : ");
