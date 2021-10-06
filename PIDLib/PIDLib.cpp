@@ -2,25 +2,25 @@
 #include <Servo.h>
 
 
-PID::PID(uint8_t mPin, uint8_t e1, uint8_t e2){
+PID::PID(uint8_t mPin, uint8_t e1, uint8_t e2) {
     speedEncoder = new SpeedEncoder(e1,e2);
     motorPin = mPin;
     motor.attach(motorPin);
 }
 
-void PID::SetGains(float p, float i, float d){
+void PID::SetGains(float p, float i, float d) {
     kP = p;
     kI = i;
     kD = d;
 }
 
-int8_t PID::Update(){
+int8_t PID::Update() {
     uint16_t ts = speedEncoder->Update(); //where ts is the time stamp
-    if(isForceOff){
+    if(isForceOff) {
         motor.writeMicroseconds(MOTOR_OFF);  
         return -1;
     }
-    if(ts){
+    if(ts) {
         float error = setPoint - speedEncoder->GetSpeed();
         cumError += kI * error * ts;
         float der = (kD*(error - lastError))/ts;
@@ -37,24 +37,24 @@ int8_t PID::Update(){
     return 0;
 }
 
-int16_t PID::GetSpeed(){
+int16_t PID::GetSpeed() {
     return outputSpeed;
 }
 
-int16_t PID::GetError(){
+int16_t PID::GetError() {
     return abs(outputSpeed - speedEncoder->GetSpeed());
 }
 
-int32_t PID::GetPos(){ //I doubt this function will ever be used
+int32_t PID::GetPos() { //I doubt this function will ever be used
     return speedEncoder->GetPos();
 }
 
-void PID::ForceOff(){
+void PID::ForceOff() {
     isForceOff = 1;
     motor.writeMicroseconds(MOTOR_OFF);  
 }
 
-int8_t PID::ResetForceOff(){
+int8_t PID::ResetForceOff() {
     if(isForceOff){
         isForceOff = 0;
         return 1;
@@ -62,7 +62,7 @@ int8_t PID::ResetForceOff(){
     return 0;
 }
 
-int16_t PID::SetSpeed(int16_t speed){
+int16_t PID::SetSpeed(int16_t speed) {
     setPoint = map(speed, INPUT_MIN, INPUT_MAX, ENCODER_MIN, ENCODER_MAX);
     return setPoint;
 }
