@@ -29,7 +29,7 @@ varName.SetGains(pGain,iGain,dGain);
 
 **Notes**
 
-Should be called once in setup using the values motions gives, which they will find expermentially
+Should be called once in setup using the values motion team gives, which they will find expermentially
 
 
 **Parameters**
