@@ -13,7 +13,8 @@ LaserGate varName(pinNumber);
 varName is the variables name (arbitary)
 
 
-**Params**
+**Parameters**
+
 Pin number: This is the pin that the laser gate sensor is attached to
 
 
