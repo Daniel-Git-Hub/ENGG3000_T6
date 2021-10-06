@@ -35,7 +35,9 @@ Should be called once in setup using the values motions gives, which they will f
 **Parameters**
 
 pGain: float, proportionally gain
+
 iGain: float, intergral gain
+
 dGain: float, derivative gain
 
 **Returns**
