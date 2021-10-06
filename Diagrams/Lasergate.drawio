@@ -1,12 +1,9 @@
-<mxfile host="app.diagrams.net" modified="2021-10-06T01:21:07.676Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="ASxwO7rnt1KjZzjF37KB" version="15.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-06T01:21:58.250Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="4VEZmM6W3NkWX2uFlQGW" version="15.4.3" type="github">
   <diagram id="9764_bwMrohZAFbPmsWr" name="Page-1">
     <mxGraphModel dx="1483" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="UMOSb1OmAXpzctyJuJC9-1" value="Current time since initialization" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="150" y="2050" width="100" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="prRc7P51FGT5b40RzYyY-56" value="LaserGate()&lt;br&gt;Initialize startTime &amp;amp; sets laserPin &amp;amp; assigns&amp;nbsp; pin &amp;amp; INPUT as parameter to pinMode&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="950" y="1840" width="140" height="90" as="geometry" />
         </mxCell>
