@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-06T00:39:00.532Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="fWo8LnGl0-A0SKipt0CK" version="15.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-06T00:41:29.341Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="5RkAhajK-3fjsvr1sp4N" version="15.4.3" type="github">
   <diagram id="Hic-Z1QADX1dXmGfSCbj" name="Page-1">
     <mxGraphModel dx="1833" dy="724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -75,7 +75,7 @@
         <mxCell id="UJK4UZglo_m1_A1JznNU-35" value="Turn Off and return -1" style="whiteSpace=wrap;html=1;rounded=1;fontSize=13;strokeWidth=2.3;spacing=0;arcSize=9;" vertex="1" parent="1">
           <mxGeometry x="590" y="580" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="UJK4UZglo_m1_A1JznNU-37" value="Update &lt;i&gt;outputSpeed&lt;/i&gt; and mappedoutSpeed" style="whiteSpace=wrap;html=1;rounded=1;fontSize=13;strokeWidth=2.3;spacing=0;arcSize=9;" vertex="1" parent="1">
+        <mxCell id="UJK4UZglo_m1_A1JznNU-37" value="Update &lt;i&gt;outputSpeed&lt;/i&gt; and &lt;i&gt;mappedoutSpeed&lt;/i&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=13;strokeWidth=2.3;spacing=0;arcSize=9;" vertex="1" parent="1">
           <mxGeometry x="910" y="580" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="UJK4UZglo_m1_A1JznNU-39" value="YES" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
@@ -96,25 +96,25 @@
         <mxCell id="UJK4UZglo_m1_A1JznNU-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UJK4UZglo_m1_A1JznNU-48" target="UJK4UZglo_m1_A1JznNU-50">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="UJK4UZglo_m1_A1JznNU-48" value="Execute GetSpeed and return OutputSpeed" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2.3;spacing=0;arcSize=9;" vertex="1" parent="1">
+        <mxCell id="UJK4UZglo_m1_A1JznNU-48" value="Execute GetSpeed and return &lt;i&gt;OutputSpeed&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2.3;spacing=0;arcSize=9;" vertex="1" parent="1">
           <mxGeometry x="550" y="740" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="UJK4UZglo_m1_A1JznNU-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UJK4UZglo_m1_A1JznNU-50" target="UJK4UZglo_m1_A1JznNU-52">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="UJK4UZglo_m1_A1JznNU-50" value="Execute GetError and return difference of outputSpeed and encoderSpeed" style="whiteSpace=wrap;html=1;rounded=1;fontSize=13;strokeWidth=2.3;spacing=0;arcSize=9;" vertex="1" parent="1">
+        <mxCell id="UJK4UZglo_m1_A1JznNU-50" value="Execute GetError and return difference of &lt;i&gt;outputSpeed &lt;/i&gt;and &lt;i&gt;encoderSpeed&lt;/i&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=13;strokeWidth=2.3;spacing=0;arcSize=9;" vertex="1" parent="1">
           <mxGeometry x="290" y="735" width="150" height="70" as="geometry" />
         </mxCell>
         <mxCell id="UJK4UZglo_m1_A1JznNU-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UJK4UZglo_m1_A1JznNU-52" target="UJK4UZglo_m1_A1JznNU-54">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="UJK4UZglo_m1_A1JznNU-52" value="Execute GetPos and return Position" style="whiteSpace=wrap;html=1;rounded=1;fontSize=13;strokeWidth=2.3;spacing=0;arcSize=9;" vertex="1" parent="1">
+        <mxCell id="UJK4UZglo_m1_A1JznNU-52" value="Execute GetPos and return &lt;i&gt;Position&lt;/i&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=13;strokeWidth=2.3;spacing=0;arcSize=9;" vertex="1" parent="1">
           <mxGeometry x="305" y="590" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="UJK4UZglo_m1_A1JznNU-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UJK4UZglo_m1_A1JznNU-54" target="UJK4UZglo_m1_A1JznNU-56">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="UJK4UZglo_m1_A1JznNU-54" value="Execute ForceOff and equate isForceOff to 1 and turn motor off" style="whiteSpace=wrap;html=1;rounded=1;fontSize=13;strokeWidth=2.3;spacing=0;arcSize=9;" vertex="1" parent="1">
+        <mxCell id="UJK4UZglo_m1_A1JznNU-54" value="Execute ForceOff and equate &lt;i&gt;isForceOff &lt;/i&gt;to 1 and turn motor off" style="whiteSpace=wrap;html=1;rounded=1;fontSize=13;strokeWidth=2.3;spacing=0;arcSize=9;" vertex="1" parent="1">
           <mxGeometry x="305" y="440" width="120" height="70" as="geometry" />
         </mxCell>
         <mxCell id="UJK4UZglo_m1_A1JznNU-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UJK4UZglo_m1_A1JznNU-56" target="UJK4UZglo_m1_A1JznNU-60">
@@ -138,7 +138,7 @@
         <mxCell id="UJK4UZglo_m1_A1JznNU-62" value="Return 0" style="whiteSpace=wrap;html=1;rounded=1;fontSize=13;strokeWidth=2.3;spacing=0;arcSize=9;" vertex="1" parent="1">
           <mxGeometry x="105" y="455" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="UJK4UZglo_m1_A1JznNU-64" value="isNotForceOff =0&lt;br&gt;Return 1" style="whiteSpace=wrap;html=1;rounded=1;fontSize=13;strokeWidth=2.3;spacing=0;arcSize=9;" vertex="1" parent="1">
+        <mxCell id="UJK4UZglo_m1_A1JznNU-64" value="&lt;i&gt;isNotForceOff &lt;/i&gt;=0&lt;br&gt;Return 1" style="whiteSpace=wrap;html=1;rounded=1;fontSize=13;strokeWidth=2.3;spacing=0;arcSize=9;" vertex="1" parent="1">
           <mxGeometry x="-55" y="295" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="UJK4UZglo_m1_A1JznNU-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UJK4UZglo_m1_A1JznNU-66" target="UJK4UZglo_m1_A1JznNU-72">
@@ -146,7 +146,7 @@
             <mxPoint x="165" y="735" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="UJK4UZglo_m1_A1JznNU-66" value="Execute SetSpeed&lt;br&gt;Initialise setPoint and return setPoint" style="whiteSpace=wrap;html=1;rounded=1;fontSize=13;strokeWidth=2.3;spacing=0;arcSize=9;" vertex="1" parent="1">
+        <mxCell id="UJK4UZglo_m1_A1JznNU-66" value="Execute SetSpeed&lt;br&gt;Initialise &lt;i&gt;setPoint&lt;/i&gt; and return &lt;i&gt;setPoint&lt;/i&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=13;strokeWidth=2.3;spacing=0;arcSize=9;" vertex="1" parent="1">
           <mxGeometry x="105" y="595" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="UJK4UZglo_m1_A1JznNU-72" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;align=center;" vertex="1" parent="1">
@@ -154,6 +154,9 @@
         </mxCell>
         <mxCell id="UJK4UZglo_m1_A1JznNU-73" value="{if it is not forced off}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="185" y="285" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="UJK4UZglo_m1_A1JznNU-74" value="YES" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="310" width="40" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
