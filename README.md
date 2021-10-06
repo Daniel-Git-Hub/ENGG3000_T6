@@ -6,7 +6,7 @@ From the library manager (in the Arduino IDE either Ctrl+Shift+I or Sketch->Incl
 
 Copy each of the folders with Lib in there name into your Docuements/Arduino/libraries folder
 
-RESTART ARDUINO IDE
+then RESTART ARDUINO IDE it only scans this folder for new libraries on load
 
 such that it looks like this
 Docuements
