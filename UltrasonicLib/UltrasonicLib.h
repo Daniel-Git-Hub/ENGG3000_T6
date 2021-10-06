@@ -17,11 +17,20 @@
 #define ECHO_PORT _SFR_IO8(0x10) //PIND
 #define ECHO_DDR _SFR_IO8(0x11) //DDRD
 
+#define US_FORWARD 0
+#define US_BACK 1
+#define US_BALL_1 2
+#define US_BALL_2 3
+
 #define ROTATION_INVALID 0
 #define ROTATION_CORRECT 1
 #define ROTATION_CLOCKWISE 2
 #define ROTATION_ANTICLOCKWISE 3
 #define ROTATION_ERROR_MARGIN 10
+
+#define BALL_DETECTION_RANGE 10
+#define BALL_NOT_DETECTED 0
+#define BALL_DETECTED 1
 
 class Ultrasonic {
     private:
@@ -35,8 +44,9 @@ class Ultrasonic {
         Ultrasonic(uint8_t,uint8_t,uint8_t,uint8_t);
         int8_t PollUS();
         uint8_t GetResponse(uint8_t);
-        uint8_t GetRotation();
+        int8_t GetRotation();
         void StartPulse();
+        int8_t IsBall();
 };
 
 #endif

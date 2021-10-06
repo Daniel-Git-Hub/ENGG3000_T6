@@ -4,10 +4,10 @@ Ultrasonic::Ultrasonic(uint8_t f, uint8_t b, uint8_t b1, uint8_t b2) {
     for(uint8_t i = 0; i < 4; i++) {
         distance[i] = 0;
     }
-    pins[0] = f;
-    pins[1] = b;
-    pins[2] = b1;
-    pins[3] = b2;
+    pins[US_FORWARD] = f;
+    pins[US_BACK] = b;
+    pins[US_BALL_1] = b1;
+    pins[US_BALL_2] = b2;
     pinMask = (1 << f) | (1 << b) | (1 << b1) | (1 << b2); 
     
     TRIGGER_DDR |= pinMask; //make sure trigger pins are output
@@ -49,9 +49,9 @@ uint8_t Ultrasonic::GetResponse(uint8_t pos) {
 }
 
 
-uint8_t Ultrasonic::GetRotation() {
-    if(distance[0] && distance[1]) {
-        int16_t difference = ((int16_t)distance[0]) - distance[1];
+int8_t Ultrasonic::GetRotation() {
+    if(distance[US_FORWARD] && distance[US_BACK]) {
+        int16_t difference = ((int16_t)distance[US_FORWARD]) - distance[US_BACK];
         uint8_t absDif = (difference > 0) ? difference : difference*-1;
         if(absDif < ROTATION_ERROR_MARGIN) {
             return ROTATION_CORRECT;
@@ -61,4 +61,14 @@ uint8_t Ultrasonic::GetRotation() {
         return ROTATION_ANTICLOCKWISE;
     }
     return ROTATION_INVALID; //invalid distances
+}
+
+int8_t Ultrasonic::IsBall(){
+    if(distance[US_BALL_1] && distance[US_BALL_1] <= BALL_DETECTION_RANGE){
+        return BALL_DETECTED;
+    }
+    if(distance[US_BALL_2] && distance[US_BALL_2] <= BALL_DETECTION_RANGE){
+        return BALL_DETECTED;
+    }
+    return BALL_NOT_DETECTED;
 }
