@@ -53,7 +53,7 @@ Returns 1 everytime it starts a new pulse, overwise 0
 
 ### GetResponse
 ```cpp
-uint16_t distance = varName(index); 
+uint16_t distance = varName.GetResponse(index); 
 ```
 
 
@@ -68,7 +68,7 @@ This is the index in the distance array, as this is arbitary there are defined c
 | US_BALL_1 | 2 | The First Ball Detect sensor |
 | US_BALL_2 | 3 | The Second Ball Detect sensor |
 
-An example is `varName(US_FORWARD)`
+An example is `varName.GetResponse(US_FORWARD)`
 
 **Returns**
 
