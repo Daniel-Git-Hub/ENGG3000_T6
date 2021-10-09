@@ -32,7 +32,7 @@ MUST be called every loop
 
 **Returns**
 
-*Returns a int8_t (signed 8 bit number)*
+*Returns a int8_t datatype*
 
 LG_STATE_EMPTY: if the sensor is unbroken
 
@@ -49,6 +49,8 @@ varName.GetState()
 
 
 **Returns**
+
+*Returns a int8_t datatype*
 
 Will return the last result from update
 
