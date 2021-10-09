@@ -76,7 +76,7 @@ void
 
 ### SetSpeed
 ```cpp
-uint16_t realSpeed = varName.SetSpeed(newSpeed);
+int16_t realSpeed = varName.SetSpeed(newSpeed);
 ```
 
 
@@ -91,7 +91,7 @@ Example
 | −32,768 | Full speed reverse |
 | -16,384 | Half speed reverse |
 | 0 | Motor stopped |
-| 16384 | Half speed forward |
+| 16,384 | Half speed forward |
 | 32,767 | Full. speed forward |
 
 Obviously any number in the range −32,768 to 32,767 can be used
