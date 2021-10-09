@@ -64,7 +64,7 @@ void
 
 **Returns**
 
-Return type: int8_t
+*Return a int8_t datatype*
 
 | value | meaning |
 | --- | --- |
@@ -98,7 +98,7 @@ Obviously any number in the range −32,768 to 32,767 can be used
 
 **Returns**
 
-Return type: int16_t
+*Return a int16_t datatype*
 
 This is the mapped speed of parameter mapped to encoder pulses per millisecond (an arbitary unit)
 This is propably useless to any user
@@ -142,7 +142,7 @@ void
 
 **Returns**
 
-Return type: int8_t
+*Return a int8_t datatype*
 
 | value | meaning |
 | --- | --- | 
