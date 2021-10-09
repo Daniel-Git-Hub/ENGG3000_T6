@@ -47,6 +47,7 @@ void
 
 **Returns**
 
+*int8_t data type*
 Returns 1 everytime it starts a new pulse, overwise 0
 
 
@@ -72,6 +73,8 @@ An example is `varName.GetResponse(US_FORWARD)`
 
 **Returns**
 
+*Returns a int16_t datatype*
+
 An unsigned 16 bit number of the distance in millimeters.
 
 If no distance was found (i.e the pulse timedout without a response) it will return 0 instead
@@ -90,6 +93,8 @@ void
 
 
 **Returns**
+
+*int8_t data type*
 
 | Constant name | Value | Meaning |
 | --- | --- | --- |
@@ -112,6 +117,8 @@ void
 
 
 **Returns**
+
+*int8_t data type*
 
 | Constant name | Value | Meaning |
 | --- | --- | --- |
