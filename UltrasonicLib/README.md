@@ -47,7 +47,8 @@ void
 
 **Returns**
 
-*int8_t data type*
+*Returns a int8_t data type*
+
 Returns 1 everytime it starts a new pulse, overwise 0
 
 
@@ -94,7 +95,7 @@ void
 
 **Returns**
 
-*int8_t data type*
+*Returns a int8_t datatype*
 
 | Constant name | Value | Meaning |
 | --- | --- | --- |
@@ -118,7 +119,7 @@ void
 
 **Returns**
 
-*int8_t data type*
+*Returns a int8_t data type*
 
 | Constant name | Value | Meaning |
 | --- | --- | --- |
