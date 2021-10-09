@@ -74,7 +74,7 @@ int8_t Ultrasonic::GetRotation() {
     return ROTATION_INVALID; //invalid distances
 }
 
-int8_t Ultrasonic::IsBall(){
+int8_t Ultrasonic::IsBall() {
     if(distance[US_BALL_1] && distance[US_BALL_1] <= BALL_DETECTION_RANGE){
         return BALL_DETECTED;
     }
